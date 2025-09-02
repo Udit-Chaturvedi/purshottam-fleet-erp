@@ -1,0 +1,98 @@
+########## PYTHON / DJANGO ##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.venv/
+
+# Django local development DB and migration artifacts
+db.sqlite3
+*.sqlite3
+*.db
+
+########## MEDIA & LOGS ##########
+static
+media/
+backend/media/
+frontend/media/
+
+# Logs
+logs/
+*.log
+backend/logs/
+frontend/logs/
+docker/logs/
+ci-cd/logs/
+*.audit.log
+
+########## TEST & COVERAGE ##########
+.coverage
+coverage.*
+htmlcov/
+.nox/
+.pytest_cache/
+test-results/
+backend/tests/__pycache__/
+frontend/src/tests/__snapshots__/
+junit.xml
+
+########## NODE / REACT / VITE ##########
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/.env
+frontend/.env.*
+frontend/.parcel-cache/
+frontend/.turbo/
+
+########## DOCKER & CONTAINER ##########
+*.pid
+*.db-journal
+docker-compose.override.yml
+backend/.dockerignore
+frontend/.dockerignore
+Dockerfile*
+docker/*
+!docker/nginx/nginx.conf
+
+########## ENVIRONMENT & SECRETS ##########
+.env
+.env.production
+.env.development
+.env.*
+
+########## OPERATING SYSTEM ##########
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*~
+
+########## CI/CD & DEPLOY ##########
+ci-cd/github/workflows/*.log
+ci-cd/.env
+ci-cd/.env.*
+ci-cd/Dockerfile-ci
+
+########## SSL / CERTIFICATES ##########
+docker/nginx/ssl/
+*.pem
+*.crt
+*.key
+
+########## MISCELLANEOUS ##########
+*.sublime-workspace
+*.vscode/
+.idea/
+*.swp
+*.bak
+*~
