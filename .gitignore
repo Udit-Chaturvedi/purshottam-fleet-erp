@@ -17,6 +17,9 @@ db.sqlite3
 *.sqlite3
 *.db
 
+########## DJANGO MIGRATIONS ##########
+**/migrations/
+
 ########## MEDIA & LOGS ##########
 static
 media/
@@ -58,11 +61,7 @@ frontend/.turbo/
 *.pid
 *.db-journal
 docker-compose.override.yml
-backend/.dockerignore
-frontend/.dockerignore
-Dockerfile*
-docker/*
-!docker/nginx/nginx.conf
+docker/logs/
 
 ########## ENVIRONMENT & SECRETS ##########
 .env

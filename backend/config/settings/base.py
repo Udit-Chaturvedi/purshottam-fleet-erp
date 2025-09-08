@@ -110,7 +110,7 @@ TEMPLATES = [
 ]
 
 # ======== Authentication / Users / Session ========
-# AUTH_USER_MODEL = "users.User"
+AUTH_USER_MODEL = "users.User"
 AUTHENTICATION_BACKENDS = [
     "axes.backends.AxesStandaloneBackend",
     "django.contrib.auth.backends.ModelBackend",
@@ -121,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator", "OPTIONS": {"min_length": 12}},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
-    {"NAME": "apps.users.validators.CustomComplexityValidator"},
+    # {"NAME": "apps.users.validators.CustomComplexityValidator"},
 ]
 
 # ========  Config ========

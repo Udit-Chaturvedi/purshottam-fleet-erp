@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.http import HttpResponse
 from health_check.views import MainView
 from apps.utils.decorators import restrict_health_check
@@ -14,4 +14,5 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('health/', restrict_health_check(MainView.as_view()), name='health_check'),
+    path('api/users/', include('apps.users.urls')),
 ]
